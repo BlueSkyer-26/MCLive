@@ -20,9 +20,8 @@ class MCTabbarController: UITabBarController {
     func initTabbarItem() -> Void {
         let tabbar = UITabBar.appearance()
         tabbar.tintColor = MCThemeColor
-        
         let tabbarItem = UITabBarItem.appearance()
-        tabbarItem.titlePositionAdjustment = UIOffsetMake(0, -4)
+        tabbarItem.titlePositionAdjustment = UIOffsetMake(0, -3)
     }
     
     func setupNewFeatureView() -> Void {
@@ -47,7 +46,6 @@ class MCTabbarController: UITabBarController {
         childViewController.tabBarItem.image = UIImage.init(named: imageName)
         childViewController.tabBarItem.selectedImage = UIImage.init(named: imageName + "-Select")
         childViewController.title = title
-        
         let navVC = MCBaseNavigationController.init(rootViewController: childViewController)
         addChildViewController(navVC)
         

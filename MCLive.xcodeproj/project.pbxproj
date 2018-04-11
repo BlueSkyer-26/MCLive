@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		799D29BD2D8AD7F7F128F549 /* Pods_MCLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379349E3AA0D3B09857AD165 /* Pods_MCLive.framework */; };
 		8411BD9D207B585A00118A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411BD9C207B585A00118A28 /* AppDelegate.swift */; };
-		8411BDA2207B585A00118A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411BDA0207B585A00118A28 /* Main.storyboard */; };
 		8411BDA4207B585A00118A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411BDA3207B585A00118A28 /* Assets.xcassets */; };
 		84497371207C5CB500B200E1 /* JDLAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84497370207C5CB500B200E1 /* JDLAdvertisingView.swift */; };
 		84497374207C65AE00B200E1 /* String+JDLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84497373207C65AE00B200E1 /* String+JDLExtension.swift */; };
@@ -36,7 +35,6 @@
 		379349E3AA0D3B09857AD165 /* Pods_MCLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411BD99207B585A00118A28 /* MCLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411BD9C207B585A00118A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8411BDA1207B585A00118A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8411BDA3207B585A00118A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8411BDA8207B585A00118A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84497370207C5CB500B200E1 /* JDLAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDLAdvertisingView.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				84533B35207B5FA900735E37 /* Classes */,
-				8411BDA0207B585A00118A28 /* Main.storyboard */,
 				8411BDA3207B585A00118A28 /* Assets.xcassets */,
 				8411BDA8207B585A00118A28 /* Info.plist */,
 			);
@@ -139,7 +136,7 @@
 		84533B35207B5FA900735E37 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				84533B3D207B60BF00735E37 /* Main(基类) */,
+				84533B3D207B60BF00735E37 /* Main */,
 				84533B38207B5FFA00735E37 /* Home(首页) */,
 				84533B39207B602100735E37 /* Classify(分类) */,
 				84533B3A207B604F00735E37 /* ShoppingCart(购物车) */,
@@ -221,14 +218,14 @@
 			path = "Profile(我)";
 			sourceTree = "<group>";
 		};
-		84533B3D207B60BF00735E37 /* Main(基类) */ = {
+		84533B3D207B60BF00735E37 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				84533B42207B6C4F00735E37 /* Controller */,
 				84533B41207B6C4800735E37 /* View */,
 				84533B40207B6C4100735E37 /* Model */,
 			);
-			path = "Main(基类)";
+			path = Main;
 			sourceTree = "<group>";
 		};
 		84533B40207B6C4100735E37 /* Model */ = {
@@ -439,7 +436,6 @@
 				8411BDA4207B585A00118A28 /* Assets.xcassets in Resources */,
 				8449737B207C685C00B200E1 /* adImage2.jpg in Resources */,
 				84497379207C685100B200E1 /* adImage4.gif in Resources */,
-				8411BDA2207B585A00118A28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,17 +522,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8411BDA0207B585A00118A28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8411BDA1207B585A00118A28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8411BDA9207B585A00118A28 /* Debug */ = {

@@ -25,14 +25,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = MCTabbarController.init()
         self.window?.rootViewController = nav
         
-        //MARK: 广告页
-//        let adImagePath = Bundle.main.path(forResource: "adImage2", ofType: "jpg") //本地图片
-//        //let adImagePath = Bundle.main.path(forResource: "adImage4", ofType: "gif") //本地gif
-//        //let adImagePath = "http://img.ui.cn/data/file/3/4/6/210643.gif"              //网络图片
-//        let _ = JDLAdvertisingView.init(adUrl: adImagePath!,didClickAdViewCompletion: {})
+        //广告页
+        self.setupAdvertisingView()
         
         self.window?.makeKeyAndVisible()
         return true
+    }
+}
+
+extension AppDelegate{
+    //MARK: 广告页
+    func setupAdvertisingView() -> Void {
+        let adImagePath = Bundle.main.path(forResource: "adImage2", ofType: "jpg") //本地图片
+        //let adImagePath = Bundle.main.path(forResource: "adImage4", ofType: "gif") //本地gif
+        //let adImagePath = "http://img.ui.cn/data/file/3/4/6/210643.gif"              //网络图片
+        let _ = JDLAdvertisingView.init(adUrl: adImagePath!,didClickAdViewCompletion: {})
     }
 }
 
